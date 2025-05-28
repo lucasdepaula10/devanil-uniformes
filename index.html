@@ -5,12 +5,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Devanil Uniformes | Uniformes Profissionais em Apucarana - PR</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        header img {
+            height: 200px;
+            width: auto;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .produtos {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .produtos h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .produto {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .imagens {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .produto img {
+            width: 300px;
+            height: auto;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        .produto p {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .item {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .item img {
+            width: 300px;
+            height: auto;
+        }
+
+        .whatsapp-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #25d366;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
-   <header style="display: flex; flex-direction: column; align-items: center; padding: 20px;">
-    <img src="logo-devanil.png" alt="Devanil Uniformes" style="height: 200px; width: auto; margin-bottom: 10px;" />
-    <h1 style="margin: 0; font-size: 24px; text-align: center;">Uniformes Profissionais em Apucarana - PR</h1>
+   <header>
+    <img src="logo-devanil.png" alt="Devanil Uniformes">
+    <h1>Uniformes Profissionais em Apucarana - PR</h1>
 </header>
 
 <section class="produtos">
@@ -18,71 +105,78 @@
 
     <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
 
-        <div class="produto" style="text-align: center;">
-            <div style="display: inline-flex; gap: 10px; justify-content: center;">
-                <img src="images/camiseta.png" alt="Camiseta de Malha PV" width="200">
-                <img src="images/CAMISETA2.png" alt="Camiseta de Malha PV" width="200">
+        <div class="produto">
+            <div class="imagens">
+                <img src="images/camiseta.png" alt="Camiseta de Malha PV">
+                <img src="images/CAMISETA2.png" alt="Camiseta de Malha PV">
             </div>
             <h3>Camiseta de Malha Fria PV</h3>
-            <p style="max-width: 300px; text-align: center;">
+            <p>
                 Apresentamos nossa camiseta de malha fria, feita com malha PV (poliéster/viscose) que oferece durabilidade e conforto. Com composição anti pilling, ela mantém sua forma e cor vibrante por mais tempo. Disponível em uma tabela de tamanhos completa e uma variedade de cores, é a escolha perfeita para quem busca qualidade e praticidade.
             </p>
         </div>
 
-        <div class="produto" style="text-align: center;">
-            <div style="display: inline-flex; gap: 10px; justify-content: center;">
-                <img src="images/camisetapolo.png" alt="Camiseta Piquet Gola Polo" width="200">
-                <img src="images/camisetapolo2.png" alt="Camiseta Piquet Gola Polo" width="200">
+        <div class="produto">
+            <div class="imagens">
+                <img src="images/camisetapolo.png" alt="Camiseta Piquet Gola Polo">
+                <img src="images/camisetapolo2.png" alt="Camiseta Piquet Gola Polo">
             </div>
             <h3>Camiseta Piquet Gola Polo</h3>
-            <p style="max-width: 300px; text-align: center;">
+            <p>
                 Apresentamos nossa gola polo com diversas opções de personalização. Disponível em malha piquet ou PV anti pilling, oferecendo versatilidade e durabilidade. A malha piquet, feita com 65% algodão e 35% poliéster, combina conforto e resistência, garantindo uma peça agradável de vestir e durável. Com uma tabela completa de cores e tamanhos, você pode encontrar a opção perfeita para o seu estilo.
             </p>
         </div>
-<div class="produto" style="text-align: center;">
-    <div style="display: inline-flex; gap: 10px; justify-content: center;">
-        <img src="images/camisasocial.png" alt="Camisa Social" width="200">
-        <img src="images/camisasocial2.png" alt="Camisa Social" width="200">
-    </div>
-    <h3>Camisa Social</h3>
-    <p style="max-width: 300px; text-align: center;">
-        Introduzimos nossa camisa social de trabalho, uma escolha elegante e profissional para o ambiente corporativo. Feita com tecido de alta qualidade, oferece conforto e durabilidade durante todo o dia. Seu design clássico e detalhes cuidadosamente acabados garantem uma imagem sofisticada. Disponível em uma variedade de cores e tamanhos para atender às preferências individuais, é a escolha perfeita para profissionais que buscam estilo e praticidade.
-    </p>
-</div>
-<div class="produto" style="text-align: center;">
-    <div style="display: inline-flex; gap: 10px; justify-content: center;">
-        <img src="images/camisabrim.png" alt="Camisa Brim Gola Polo" width="200">
-        <img src="images/camisabrim2.png" alt="Camisa Brim Gola Polo" width="200">
-    </div>
-    <h3>Camisa Brim Gola Polo</h3>
-    <p style="max-width: 300px; text-align: center;">
-        Apresentamos nossa camisa profissional em brim, feita de um tecido resistente, composto por algodão, linho ou fibra sintética, onde apenas os fios do urdume são tingidos. Ideal para uma variedade de atividades que exigem resistência, como setor alimentício, automotivo, construção civil, hospitalar e muitos outros. Com uma tabela completa de cores e tamanhos, oferecemos opções para atender a diversas necessidades profissionais.
-    </p>
-</div>
-<div class="produto" style="text-align: center;">
-    <div style="display: inline-flex; gap: 10px; justify-content: center;">
-        <img src="images/jaleco.png" alt="Jaleco de Brim" width="200">
-        <img src="images/jaleco1.png" alt="Jaleco de Brim" width="200">
-    </div>
-    <h3>Jaleco de Brim</h3>
-    <p style="max-width: 300px; text-align: center;">
-        Apresentamos nosso jaleco de brim, desenvolvido com abertura frontal completa e faixa de proteção sobre os botões, proporcionando segurança e praticidade. O modelo ilustrado possui punho canhão, mas também oferecemos a opção com punho abotoável, adaptando-se às preferências do profissional. Também disponibilizamos versões com maior comprimento, ideais para garantir proteção extra ao tronco contra diversos riscos, como respingos, contaminações e variações de temperatura. Disponível em ampla tabela de cores e tamanhos, é a escolha ideal para quem busca conforto, resistência e funcionalidade no ambiente de trabalho.
-    </p>
-</div>
-<div class="produto">
-  <img src="images/calçabrim.png" alt="Calça Brim Meio Elástico 4 Bolsos">
-  <h3>Calça Brim Meio Elástico 4 Bolsos</h3>
-  <p>
-    Apresentamos nossa calça de brim, desenvolvida com tecido de alta gramatura, que proporciona resistência e durabilidade excepcionais. O modelo conta com quatro bolsos chapados — dois frontais e dois traseiros — e cós meio elástico, garantindo conforto, mobilidade e ajuste anatômico ao usuário. <br>
-    Disponível nas versões em tecido 100% algodão ou composição mista (66% poliéster e 33% algodão), adapta-se perfeitamente a diferentes ambientes de trabalho. <br>
-    Para maior segurança, também oferecemos a opção com faixa refletiva, ideal para atividades que requerem maior visibilidade. <br>
-    Nossa tabela completa de cores e tamanhos assegura alternativas personalizadas para atender às necessidades e preferências de cada cliente.
-  </p>
-</div>
+
+        <div class="produto">
+            <div class="imagens">
+                <img src="images/camisasocial.png" alt="Camisa Social">
+                <img src="images/camisasocial2.png" alt="Camisa Social">
+            </div>
+            <h3>Camisa Social</h3>
+            <p>
+                Introduzimos nossa camisa social de trabalho, uma escolha elegante e profissional para o ambiente corporativo. Feita com tecido de alta qualidade, oferece conforto e durabilidade durante todo o dia. Seu design clássico e detalhes cuidadosamente acabados garantem uma imagem sofisticada. Disponível em uma variedade de cores e tamanhos para atender às preferências individuais, é a escolha perfeita para profissionais que buscam estilo e praticidade.
+            </p>
+        </div>
+
+        <div class="produto">
+            <div class="imagens">
+                <img src="images/camisabrim.png" alt="Camisa Brim Gola Polo">
+                <img src="images/camisabrim2.png" alt="Camisa Brim Gola Polo">
+            </div>
+            <h3>Camisa Brim Gola Polo</h3>
+            <p>
+                Apresentamos nossa camisa profissional em brim, feita de um tecido resistente, composto por algodão, linho ou fibra sintética, onde apenas os fios do urdume são tingidos. Ideal para uma variedade de atividades que exigem resistência, como setor alimentício, automotivo, construção civil, hospitalar e muitos outros. Com uma tabela completa de cores e tamanhos, oferecemos opções para atender a diversas necessidades profissionais.
+            </p>
+        </div>
+
+        <div class="produto">
+            <div class="imagens">
+                <img src="images/jaleco.png" alt="Jaleco de Brim">
+                <img src="images/jaleco1.png" alt="Jaleco de Brim">
+            </div>
+            <h3>Jaleco de Brim</h3>
+            <p>
+                Apresentamos nosso jaleco de brim, desenvolvido com abertura frontal completa e faixa de proteção sobre os botões, proporcionando segurança e praticidade. O modelo ilustrado possui punho canhão, mas também oferecemos a opção com punho abotoável, adaptando-se às preferências do profissional. Também disponibilizamos versões com maior comprimento, ideais para garantir proteção extra ao tronco contra diversos riscos, como respingos, contaminações e variações de temperatura. Disponível em ampla tabela de cores e tamanhos, é a escolha ideal para quem busca conforto, resistência e funcionalidade no ambiente de trabalho.
+            </p>
+        </div>
+
+        <div class="produto">
+            <div class="imagens">
+                <img src="images/calçabrim.png" alt="Calça Brim Meio Elástico 4 Bolsos">
+            </div>
+            <h3>Calça Brim Meio Elástico 4 Bolsos</h3>
+            <p>
+                Apresentamos nossa calça de brim, desenvolvida com tecido de alta gramatura, que proporciona resistência e durabilidade excepcionais. O modelo conta com quatro bolsos chapados — dois frontais e dois traseiros — e cós meio elástico, garantindo conforto, mobilidade e ajuste anatômico ao usuário. <br>
+                Disponível nas versões em tecido 100% algodão ou composição mista (66% poliéster e 33% algodão), adapta-se perfeitamente a diferentes ambientes de trabalho. <br>
+                Para maior segurança, também oferecemos a opção com faixa refletiva, ideal para atividades que requerem maior visibilidade. <br>
+                Nossa tabela completa de cores e tamanhos assegura alternativas personalizadas para atender às necessidades e preferências de cada cliente.
+            </p>
+        </div>
+
     </div>
 
-    <div class="item" style="text-align: center; margin-top: 20px;">
-        <img src="images/jaleco.jpg" alt="Jaleco Profissional" style="width: 200px; height: auto;">
+    <div class="item">
+        <img src="images/jaleco.jpg" alt="Jaleco Profissional">
         <p>Jaleco Profissional</p>
     </div>
 
