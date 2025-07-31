@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -66,10 +65,10 @@
             margin: 0 auto;
         }
 
-        .descricao-produto {
-            display: none;
-            margin-top: 10px;
-        }
+        
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;}
 
         .item {
             text-align: center;
@@ -306,12 +305,16 @@
 
 <script>
     function toggleDescricao(produto) {
-        const desc = produto.querySelector('p');
-        if (desc.classList.contains('descricao-produto')) {
-            desc.style.display = (desc.style.display === 'block') ? 'none' : 'block';
+        const desc = produto.querySelector('.descricao-produto');
+        if (desc.style.maxHeight && desc.style.maxHeight !== '0px') {
+            desc.style.maxHeight = '0';
+        } else {
+            desc.style.maxHeight = desc.scrollHeight + 'px';
         }
+    }
     }
 </script>
 
 </body>
 </html>
+
